@@ -1,7 +1,7 @@
 <?php
 
-/* @classy/content/page-title.html.twig */
-class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec449578e extends Twig_Template
+/* modules/contrib/token/templates/token-tree-link.html.twig */
+class __TwigTemplate_91b5c5a2332cce638919611a45eaf69d73584a2698cc4bc83a9e52086adec419 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,7 +15,7 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 16);
+        $tags = array("if" => 17);
         $filters = array();
         $functions = array();
 
@@ -39,29 +39,16 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
             throw $e;
         }
 
-        // line 15
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["title_prefix"] ?? null), "html", null, true));
-        echo "
-";
-        // line 16
-        if (($context["title"] ?? null)) {
-            // line 17
-            echo "  <h1";
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["title_attributes"] ?? null), "addClass", array(0 => "page-title"), "method"), "html", null, true));
-            echo ">";
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["title"] ?? null), "html", null, true));
-            echo "</h1>
-";
+        // line 17
+        if (($context["link"] ?? null)) {
+            // line 18
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["link"] ?? null), "html", null, true));
         }
-        // line 19
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["title_suffix"] ?? null), "html", null, true));
-        echo "
-";
     }
 
     public function getTemplateName()
     {
-        return "@classy/content/page-title.html.twig";
+        return "modules/contrib/token/templates/token-tree-link.html.twig";
     }
 
     public function isTraitable()
@@ -71,7 +58,7 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
 
     public function getDebugInfo()
     {
-        return array (  57 => 19,  49 => 17,  47 => 16,  43 => 15,);
+        return array (  45 => 18,  43 => 17,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -84,6 +71,6 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "@classy/content/page-title.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\content\\page-title.html.twig");
+        return new Twig_Source("", "modules/contrib/token/templates/token-tree-link.html.twig", "C:\\xampp\\htdocs\\drupal8\\modules\\contrib\\token\\templates\\token-tree-link.html.twig");
     }
 }

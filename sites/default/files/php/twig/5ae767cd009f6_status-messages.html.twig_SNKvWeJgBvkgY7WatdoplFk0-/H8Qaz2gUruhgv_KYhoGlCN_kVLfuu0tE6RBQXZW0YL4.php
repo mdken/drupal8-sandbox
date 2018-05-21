@@ -1,6 +1,6 @@
 <?php
 
-/* @classy/misc/status-messages.html.twig */
+/* core/themes/classy/templates/misc/status-messages.html.twig */
 class __TwigTemplate_07bf39eb4b50ac33a5ae7353e0af4d0a13143443faecce3d546be9bacc36242f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -127,7 +127,7 @@ $context["type"]));
 
     public function getTemplateName()
     {
-        return "@classy/misc/status-messages.html.twig";
+        return "core/themes/classy/templates/misc/status-messages.html.twig";
     }
 
     public function getDebugInfo()
@@ -145,6 +145,6 @@ $context["type"]));
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "@classy/misc/status-messages.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\misc\\status-messages.html.twig");
+        return new Twig_Source("", "core/themes/classy/templates/misc/status-messages.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\misc\\status-messages.html.twig");
     }
 }

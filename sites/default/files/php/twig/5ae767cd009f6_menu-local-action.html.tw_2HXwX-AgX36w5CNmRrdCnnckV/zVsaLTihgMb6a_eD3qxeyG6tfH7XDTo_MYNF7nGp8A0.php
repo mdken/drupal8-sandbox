@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/user/user.html.twig */
-class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e46b91 extends Twig_Template
+/* core/themes/classy/templates/navigation/menu-local-action.html.twig */
+class __TwigTemplate_5d1599a7f1b376fdd32052ee7c849402541113a0956fcac5772a64055ddc48c9 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 20);
+        $tags = array();
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array('if'),
+                array(),
                 array(),
                 array()
             );
@@ -39,24 +39,18 @@ class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e
             throw $e;
         }
 
-        // line 19
-        echo "<article";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => "profile"), "method"), "html", null, true));
-        echo ">
-  ";
-        // line 20
-        if (($context["content"] ?? null)) {
-            // line 21
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
-        }
-        // line 23
-        echo "</article>
+        // line 13
+        echo "<li";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["attributes"] ?? null), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["link"] ?? null), "html", null, true));
+        echo "</li>
 ";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/user/user.html.twig";
+        return "core/themes/classy/templates/navigation/menu-local-action.html.twig";
     }
 
     public function isTraitable()
@@ -66,7 +60,7 @@ class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e
 
     public function getDebugInfo()
     {
-        return array (  53 => 23,  50 => 21,  48 => 20,  43 => 19,);
+        return array (  43 => 13,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -79,6 +73,6 @@ class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/classy/templates/user/user.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\user\\user.html.twig");
+        return new Twig_Source("", "core/themes/classy/templates/navigation/menu-local-action.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\navigation\\menu-local-action.html.twig");
     }
 }
