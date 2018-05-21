@@ -9,11 +9,13 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
  */
 
 class HelloWorldSalutation {
+
     use StringTranslationTrait;
 
     /**
      * Returns the salutation
      */
+
     public function getSalutation() {
         $time = new \DateTime();
         if ((int) $time->format('G') >= 06 && (int) $time->format('G') < 12) {
