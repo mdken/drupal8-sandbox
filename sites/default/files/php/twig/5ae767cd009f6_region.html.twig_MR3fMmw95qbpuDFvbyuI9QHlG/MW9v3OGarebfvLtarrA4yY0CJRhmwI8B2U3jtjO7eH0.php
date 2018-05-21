@@ -1,34 +1,28 @@
 <?php
 
-/* core/themes/classy/templates/block/block--local-tasks-block.html.twig */
-class __TwigTemplate_75f69e34df12f2cb364a4b1704bc609d8c4b9fef2743d1acbea42aa23d2cdb9b extends Twig_Template
+/* region.html.twig */
+class __TwigTemplate_a3ec482b72170cf0e4eac5b38376f1d0d1ca3289bf1a14e3f7979726189b8cab extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("block.html.twig", "core/themes/classy/templates/block/block--local-tasks-block.html.twig", 1);
-        $this->blocks = array(
-            'content' => array($this, 'block_content'),
-        );
-    }
+        $this->parent = false;
 
-    protected function doGetParent(array $context)
-    {
-        return "block.html.twig";
+        $this->blocks = array(
+        );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 9);
-        $filters = array("t" => 10);
+        $tags = array("set" => 16, "if" => 21);
+        $filters = array("clean_class" => 18);
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array('if'),
-                array('t'),
+                array('set', 'if'),
+                array('clean_class'),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -45,31 +39,27 @@ class __TwigTemplate_75f69e34df12f2cb364a4b1704bc609d8c4b9fef2743d1acbea42aa23d2
             throw $e;
         }
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-    }
-
-    // line 8
-    public function block_content($context, array $blocks = array())
-    {
-        // line 9
-        echo "  ";
+        // line 16
+        $context["classes"] = array(0 => "region", 1 => ("region-" . \Drupal\Component\Utility\Html::getClass(        // line 18
+($context["region"] ?? null))));
+        // line 21
         if (($context["content"] ?? null)) {
-            // line 10
-            echo "    <nav class=\"tabs\" role=\"navigation\" aria-label=\"";
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(t("Tabs")));
-            echo "\">
-      ";
-            // line 11
+            // line 22
+            echo "  <div";
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => ($context["classes"] ?? null)), "method"), "html", null, true));
+            echo ">
+    ";
+            // line 23
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
             echo "
-    </nav>
-  ";
+  </div>
+";
         }
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/block/block--local-tasks-block.html.twig";
+        return "region.html.twig";
     }
 
     public function isTraitable()
@@ -79,7 +69,7 @@ class __TwigTemplate_75f69e34df12f2cb364a4b1704bc609d8c4b9fef2743d1acbea42aa23d2
 
     public function getDebugInfo()
     {
-        return array (  63 => 11,  58 => 10,  55 => 9,  52 => 8,  11 => 1,);
+        return array (  53 => 23,  48 => 22,  46 => 21,  44 => 18,  43 => 16,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -92,6 +82,6 @@ class __TwigTemplate_75f69e34df12f2cb364a4b1704bc609d8c4b9fef2743d1acbea42aa23d2
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/classy/templates/block/block--local-tasks-block.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\block\\block--local-tasks-block.html.twig");
+        return new Twig_Source("", "region.html.twig", "core/themes/classy/templates/layout/region.html.twig");
     }
 }

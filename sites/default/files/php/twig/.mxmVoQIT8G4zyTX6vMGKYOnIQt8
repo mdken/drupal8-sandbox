@@ -1,6 +1,6 @@
 <?php
 
-/* core/themes/classy/templates/content/page-title.html.twig */
+/* @classy/content/page-title.html.twig */
 class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec449578e extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -61,7 +61,7 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/content/page-title.html.twig";
+        return "@classy/content/page-title.html.twig";
     }
 
     public function isTraitable()
@@ -84,6 +84,6 @@ class __TwigTemplate_ebb3851e3e8fd7bf298181f5f6ad1757615f36df754159f1758263fec44
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/classy/templates/content/page-title.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\content\\page-title.html.twig");
+        return new Twig_Source("", "@classy/content/page-title.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\content\\page-title.html.twig");
     }
 }

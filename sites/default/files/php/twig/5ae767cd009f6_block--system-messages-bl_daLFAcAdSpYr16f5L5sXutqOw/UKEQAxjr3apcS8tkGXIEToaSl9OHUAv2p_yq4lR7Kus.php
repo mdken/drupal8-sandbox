@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}{{ type }} {{ severity }} */
-class __TwigTemplate_971086cdfe476c54a588b9c6d9801ed75e8b40f3b0bbba75f8e7ea16836dfd41 extends Twig_Template
+/* core/themes/stable/templates/block/block--system-messages-block.html.twig */
+class __TwigTemplate_f5a720fd9d85cca74267dcba36e96a96c5cbb965a925e6d6c9b8b08c6c6f0b24 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,15 +39,15 @@ class __TwigTemplate_971086cdfe476c54a588b9c6d9801ed75e8b40f3b0bbba75f8e7ea16836
             throw $e;
         }
 
-        // line 1
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["type"] ?? null), "html", null, true));
-        echo " ";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["severity"] ?? null), "html", null, true));
+        // line 13
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
+        echo "
+";
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}{{ type }} {{ severity }}";
+        return "core/themes/stable/templates/block/block--system-messages-block.html.twig";
     }
 
     public function isTraitable()
@@ -57,7 +57,7 @@ class __TwigTemplate_971086cdfe476c54a588b9c6d9801ed75e8b40f3b0bbba75f8e7ea16836
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  43 => 13,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -70,6 +70,6 @@ class __TwigTemplate_971086cdfe476c54a588b9c6d9801ed75e8b40f3b0bbba75f8e7ea16836
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "{# inline_template_start #}{{ type }} {{ severity }}", "");
+        return new Twig_Source("", "core/themes/stable/templates/block/block--system-messages-block.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\stable\\templates\\block\\block--system-messages-block.html.twig");
     }
 }

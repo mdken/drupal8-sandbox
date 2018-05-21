@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}{{ message }} */
-class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de37518b20 extends Twig_Template
+/* core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig */
+class __TwigTemplate_651a55ab80fd6a2735efee34f845883d2aaff058a3aa63fa1bf8cd393c5be590 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array();
+        $tags = array("if" => 20);
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array(),
+                array('if'),
                 array(),
                 array()
             );
@@ -39,13 +39,22 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
             throw $e;
         }
 
-        // line 1
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["message"] ?? null), "html", null, true));
+        // line 20
+        if (($context["children"] ?? null)) {
+            // line 21
+            echo "  <div class=\"dialog-off-canvas-main-canvas\" data-off-canvas-main-canvas>
+    ";
+            // line 22
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["children"] ?? null), "html", null, true));
+            echo "
+  </div>
+";
+        }
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}{{ message }}";
+        return "core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig";
     }
 
     public function isTraitable()
@@ -55,7 +64,7 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  48 => 22,  45 => 21,  43 => 20,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -68,6 +77,6 @@ class __TwigTemplate_70e1a31703d0ad0d19d68737c4fe80cbf0c45d981f4e0af92281a2de375
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "{# inline_template_start #}{{ message }}", "");
+        return new Twig_Source("", "core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\stable\\templates\\content\\off-canvas-page-wrapper.html.twig");
     }
 }

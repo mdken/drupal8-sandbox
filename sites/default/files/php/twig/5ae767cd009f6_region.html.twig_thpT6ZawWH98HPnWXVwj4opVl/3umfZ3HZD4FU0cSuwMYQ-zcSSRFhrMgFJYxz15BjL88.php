@@ -1,7 +1,7 @@
 <?php
 
-/* {# inline_template_start #}admin/reports/dblog/event/{{ wid }} */
-class __TwigTemplate_806258ac7309c8d68bad3b7b856a1d11c9c5d9b8cfaaf3589810392a67cf96ac extends Twig_Template
+/* core/themes/classy/templates/layout/region.html.twig */
+class __TwigTemplate_ff1309b44325dbecec21c7034225b37c1c43bb1c186ce2edae227086c621267b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,14 +15,14 @@ class __TwigTemplate_806258ac7309c8d68bad3b7b856a1d11c9c5d9b8cfaaf3589810392a67c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array();
-        $filters = array();
+        $tags = array("set" => 16, "if" => 21);
+        $filters = array("clean_class" => 18);
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array(),
-                array(),
+                array('set', 'if'),
+                array('clean_class'),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -39,14 +39,27 @@ class __TwigTemplate_806258ac7309c8d68bad3b7b856a1d11c9c5d9b8cfaaf3589810392a67c
             throw $e;
         }
 
-        // line 1
-        echo "admin/reports/dblog/event/";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["wid"] ?? null), "html", null, true));
+        // line 16
+        $context["classes"] = array(0 => "region", 1 => ("region-" . \Drupal\Component\Utility\Html::getClass(        // line 18
+($context["region"] ?? null))));
+        // line 21
+        if (($context["content"] ?? null)) {
+            // line 22
+            echo "  <div";
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => ($context["classes"] ?? null)), "method"), "html", null, true));
+            echo ">
+    ";
+            // line 23
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
+            echo "
+  </div>
+";
+        }
     }
 
     public function getTemplateName()
     {
-        return "{# inline_template_start #}admin/reports/dblog/event/{{ wid }}";
+        return "core/themes/classy/templates/layout/region.html.twig";
     }
 
     public function isTraitable()
@@ -56,7 +69,7 @@ class __TwigTemplate_806258ac7309c8d68bad3b7b856a1d11c9c5d9b8cfaaf3589810392a67c
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  53 => 23,  48 => 22,  46 => 21,  44 => 18,  43 => 16,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -69,6 +82,6 @@ class __TwigTemplate_806258ac7309c8d68bad3b7b856a1d11c9c5d9b8cfaaf3589810392a67c
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "{# inline_template_start #}admin/reports/dblog/event/{{ wid }}", "");
+        return new Twig_Source("", "core/themes/classy/templates/layout/region.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\layout\\region.html.twig");
     }
 }
