@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/seven/templates/menu-local-tasks.html.twig */
-class __TwigTemplate_46011a2009d434acdaaf6bab5f8cc0602ccca185dd71a328ce3fd0bb2f789b81 extends Twig_Template
+/* core/themes/classy/templates/navigation/menu-local-tasks.html.twig */
+class __TwigTemplate_5403fc0ea22f01fcebdb66974664515d7edbca5b4a09332f15ca4fa5f8fdc0b3 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,8 +15,8 @@ class __TwigTemplate_46011a2009d434acdaaf6bab5f8cc0602ccca185dd71a328ce3fd0bb2f7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 16);
-        $filters = array("t" => 17);
+        $tags = array("if" => 14);
+        $filters = array("t" => 15);
         $functions = array();
 
         try {
@@ -39,43 +39,35 @@ class __TwigTemplate_46011a2009d434acdaaf6bab5f8cc0602ccca185dd71a328ce3fd0bb2f7
             throw $e;
         }
 
-        // line 16
+        // line 14
         if (($context["primary"] ?? null)) {
-            // line 17
-            echo "  <h2 id=\"primary-tabs-title\" class=\"visually-hidden\">";
+            // line 15
+            echo "  <h2 class=\"visually-hidden\">";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(t("Primary tabs")));
             echo "</h2>
-  <nav role=\"navigation\" class=\"is-horizontal is-collapsible\" aria-labelledby=\"primary-tabs-title\" data-drupal-nav-tabs>
-    <button class=\"reset-appearance tabs__tab tabs__trigger\" aria-label=\"";
-            // line 19
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(t("Primary tabs display toggle")));
-            echo "\" data-drupal-nav-tabs-trigger>&bull;&bull;&bull;</button>
-    <ul class=\"tabs primary clearfix\" data-drupal-nav-tabs-target>";
-            // line 20
+  <ul class=\"tabs primary\">";
+            // line 16
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["primary"] ?? null), "html", null, true));
             echo "</ul>
-  </nav>
 ";
         }
-        // line 23
+        // line 18
         if (($context["secondary"] ?? null)) {
-            // line 24
-            echo "  <h2 id=\"secondary-tabs-title\" class=\"visually-hidden\">";
+            // line 19
+            echo "  <h2 class=\"visually-hidden\">";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(t("Secondary tabs")));
             echo "</h2>
-  <nav role=\"navigation\" class=\"is-horizontal\" aria-labelledby=\"secondary-tabs-title\" data-drupal-nav-tabs>
-    <ul class=\"tabs secondary clearfix\">";
-            // line 26
+  <ul class=\"tabs secondary\">";
+            // line 20
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["secondary"] ?? null), "html", null, true));
             echo "</ul>
-  </nav>
 ";
         }
     }
 
     public function getTemplateName()
     {
-        return "core/themes/seven/templates/menu-local-tasks.html.twig";
+        return "core/themes/classy/templates/navigation/menu-local-tasks.html.twig";
     }
 
     public function isTraitable()
@@ -85,7 +77,7 @@ class __TwigTemplate_46011a2009d434acdaaf6bab5f8cc0602ccca185dd71a328ce3fd0bb2f7
 
     public function getDebugInfo()
     {
-        return array (  69 => 26,  63 => 24,  61 => 23,  55 => 20,  51 => 19,  45 => 17,  43 => 16,);
+        return array (  62 => 20,  57 => 19,  55 => 18,  50 => 16,  45 => 15,  43 => 14,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -98,6 +90,6 @@ class __TwigTemplate_46011a2009d434acdaaf6bab5f8cc0602ccca185dd71a328ce3fd0bb2f7
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/seven/templates/menu-local-tasks.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\seven\\templates\\menu-local-tasks.html.twig");
+        return new Twig_Source("", "core/themes/classy/templates/navigation/menu-local-tasks.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\navigation\\menu-local-tasks.html.twig");
     }
 }

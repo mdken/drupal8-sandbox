@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/form/container.html.twig */
-class __TwigTemplate_b52e4947cf27805ad18fcc68148702214216c8e867385097849b3e23842e372d extends Twig_Template
+/* core/themes/classy/templates/user/user.html.twig */
+class __TwigTemplate_ecbf899608a635e27de756ca3f002eb6ec893f0feeae798966205f7a97e46b91 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_b52e4947cf27805ad18fcc68148702214216c8e867385097849b3e23842
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("set" => 23);
+        $tags = array("if" => 20);
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array('set'),
+                array('if'),
                 array(),
                 array()
             );
@@ -39,22 +39,24 @@ class __TwigTemplate_b52e4947cf27805ad18fcc68148702214216c8e867385097849b3e23842
             throw $e;
         }
 
+        // line 19
+        echo "<article";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => "profile"), "method"), "html", null, true));
+        echo ">
+  ";
+        // line 20
+        if (($context["content"] ?? null)) {
+            // line 21
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
+        }
         // line 23
-        $context["classes"] = array(0 => ((        // line 24
-($context["has_parent"] ?? null)) ? ("js-form-wrapper") : ("")), 1 => ((        // line 25
-($context["has_parent"] ?? null)) ? ("form-wrapper") : ("")));
-        // line 28
-        echo "<div";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => ($context["classes"] ?? null)), "method"), "html", null, true));
-        echo ">";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["children"] ?? null), "html", null, true));
-        echo "</div>
+        echo "</article>
 ";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/form/container.html.twig";
+        return "core/themes/classy/templates/user/user.html.twig";
     }
 
     public function isTraitable()
@@ -64,7 +66,7 @@ class __TwigTemplate_b52e4947cf27805ad18fcc68148702214216c8e867385097849b3e23842
 
     public function getDebugInfo()
     {
-        return array (  47 => 28,  45 => 25,  44 => 24,  43 => 23,);
+        return array (  53 => 23,  50 => 21,  48 => 20,  43 => 19,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -77,6 +79,6 @@ class __TwigTemplate_b52e4947cf27805ad18fcc68148702214216c8e867385097849b3e23842
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/classy/templates/form/container.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\form\\container.html.twig");
+        return new Twig_Source("", "core/themes/classy/templates/user/user.html.twig", "C:\\xampp\\htdocs\\drupal8\\core\\themes\\classy\\templates\\user\\user.html.twig");
     }
 }
